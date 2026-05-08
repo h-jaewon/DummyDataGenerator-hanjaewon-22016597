@@ -1,0 +1,12 @@
+{
+  "table": "products",
+  "columns": [
+    {"name": "id",          "type": "autoincrement"},
+    {"name": "name",        "type": "catch_phrase"},
+    {"name": "category",    "type": "random_element", "args": {"elements": ["전자제품", "패션/의류", "식품/음료", "생활용품", "스포츠", "도서", "뷰티/건강", "완구/취미"]}},
+    {"name": "price",       "type": "random_int", "args": {"min": 1000, "max": 500000}},
+    {"name": "stock",       "type": "random_int", "args": {"min": 0, "max": 1000}},
+    {"name": "description", "type": "sentence", "args": {"nb_words": 10}},
+    {"name": "created_at",  "type": "date_time_this_year"}
+  ]
+}

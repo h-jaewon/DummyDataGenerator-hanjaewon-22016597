@@ -1,0 +1,12 @@
+{
+  "table": "users",
+  "columns": [
+    {"name": "id",         "type": "autoincrement"},
+    {"name": "name",       "type": "name"},
+    {"name": "email",      "type": "email"},
+    {"name": "phone",      "type": "phone_number"},
+    {"name": "address",    "type": "address"},
+    {"name": "birthday",   "type": "date_of_birth", "args": {"minimum_age": 18, "maximum_age": 80}},
+    {"name": "created_at", "type": "date_time_this_year"}
+  ]
+}

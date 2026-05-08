@@ -1,0 +1,11 @@
+{
+  "table": "orders",
+  "columns": [
+    {"name": "id",         "type": "autoincrement"},
+    {"name": "user_id",    "type": "random_int", "args": {"min": 1, "max": 50}},
+    {"name": "product_id", "type": "random_int", "args": {"min": 1, "max": 20}},
+    {"name": "quantity",   "type": "random_int", "args": {"min": 1, "max": 10}},
+    {"name": "status",     "type": "random_element", "args": {"elements": ["pending", "paid", "shipped", "delivered", "cancelled"]}},
+    {"name": "ordered_at", "type": "date_time_this_year"}
+  ]
+}
